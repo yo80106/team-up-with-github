@@ -28,9 +28,3 @@ jobs:
       # Runs a single command using the runners shell
       - name: Marp CLI Action
         uses: KoharaKazuya/marp-cli-action@v3.0.0
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./test
